@@ -1,0 +1,47 @@
+= Release Notes.
+
+== 2.0.1 (Unreleased)
+
+
+== 2.0.0
+
+* https://issues.jenkins-ci.org/browse/JENKINS-56989[JENKINS-56989] - Default `pty` to `false` for sshCommand.
+
+CAUTION: `sshCommand` with `sudo:true` param also requires `pty:true` on remote config with this upgrade. (This is only applicable for few platforms like Linux so apply this accordingly)
+
+* Upgrade pom dependencies
+** Minimum Jenkins Requirement: 2.121.1
+** Groovy SSH - 2.10.1
+** Parent POM - 3.34.
+** Upgraded few other test dependencies.
+
+== 1.2.1
+
+* https://issues.jenkins-ci.org/browse/JENKINS-55194[JENKINS-55194] - Add logLevel to support debugging and also reduce default excessive logging.
+** Make `filterBy` and `filterRegex` optional.
+
+== 1.2.0
+
+* https://issues.jenkins-ci.org/browse/JENKINS-55194[JENKINS-55194] - Add logLevel to support debugging and also reduce default excessive logging.
+* https://issues.jenkins-ci.org/browse/JENKINS-53361[JENKINS-53361] - Copy files using a regular expression.
+* Code cleanup, update documentation.
+
+== 1.1.1
+
+* https://issues.jenkins-ci.org/browse/JENKINS-53556[JENKINS-53556] - Fix invalid proxy settings and validation.
+
+== 1.1.0
+
+* https://issues.jenkins-ci.org/browse/JENKINS-52225[JENKINS-52225] - Upgrade to latest JSch version.
+* https://issues.jenkins-ci.org/browse/JENKINS-52390[JENKINS-52390] - Throw appropriate error when the code is not in node block.
+* https://issues.jenkins-ci.org/browse/JENKINS-52532[JENKINS-52532] - Throws exception when used remote with gateway option.
+
+== 1.0.0
+
+* Initial release.
+* Supported Steps.
+** sshCommand
+** sshScript
+** sshGet
+** sshPut
+** sshRemove
