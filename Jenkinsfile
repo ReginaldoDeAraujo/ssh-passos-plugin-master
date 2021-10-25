@@ -7,6 +7,6 @@ node {
   remote.password = '379223'
   remote.allowAnyHosts = true  
   stage('Remote SSH') {
-    sshCommand remote: remote, comand: "ls -lrt"
+    sshCommand remote: remote, comand: "sudo service ssh status"
   }
 }
