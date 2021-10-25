@@ -6,4 +6,7 @@ node {
   remote.user = 'root'
   remote.password = '379223'
   remote.allowAnyHosts = true  
+  stage('Remote SSH') {
+    sshCommand remote: remote, comand: "ls -lrt"
+  }
 }
