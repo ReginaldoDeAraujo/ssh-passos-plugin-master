@@ -1,6 +1,5 @@
+#!/usr/bin/env groovy
 
-node {
-  def remote = [:]
-  remote.name = 'reginaldo'
-  remote.host = 'reginaldo@192.168.1.108'
-}
+/* `buildPlugin` step provided by: https://github.com/jenkins-infra/pipeline-library */
+
+buildPlugin(platforms: ['linux'])
